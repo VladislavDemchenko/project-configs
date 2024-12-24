@@ -1,0 +1,9 @@
+server:
+    port: 8081
+
+eureka:
+  client:
+    service-uri:
+      defaultZone: http://217.66.96.18:8761/eureka
+  instance:
+    prefer-ip-address: true

@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dev_db
+    username: dev_user
+    password: dev_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # Зручно для розробки, автоматичне оновлення схем
+    show-sql: true
+
+logging:
+  level:
+    root: DEBUG
+    com.yourpackage: DEBUG

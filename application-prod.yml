@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://prod-db-server:3306/prod_db
+    username: prod_user
+    password: secure_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none # У продакшн-середовищі схему бази даних змінювати вручну
+    show-sql: false
+
+logging:
+  level:
+    root: WARN
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  security:
+    enabled: true
