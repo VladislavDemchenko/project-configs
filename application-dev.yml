@@ -7,7 +7,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update # Зручно для розробки, автоматичне оновлення схем
+      ddl-auto: update
     show-sql: true
 
 logging:
