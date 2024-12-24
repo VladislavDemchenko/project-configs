@@ -3,19 +3,4 @@ server:
 
 spring:
   application:
-    name: client-service
-
-  cloud:
-    config:
-      uri: http://localhost:8888 # Адреса вашого config-service
-      fail-fast: true # Програма не запуститься, якщо не знайде конфіг-сервіс
-    discovery:
-      enabled: true
-      service-id: config-service # Використання через Eureka
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-    register-with-eureka: true
-    fetch-registry: true
+    name: config-service
